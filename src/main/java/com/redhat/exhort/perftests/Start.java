@@ -20,7 +20,7 @@ import picocli.CommandLine;
 @CommandLine.Command
 public class Start implements Runnable {
 
-    @CommandLine.Option(names = {"-r", "--requests"}, description = "Number of requests to run. Defaults to 20.", defaultValue = "1")
+    @CommandLine.Option(names = {"-r", "--requests"}, description = "Number of requests to run. Defaults to 20.", defaultValue = "20")
     Integer requests;
 
     @CommandLine.Option(names = {"-m", "--manifest"}, description = "Manifest file path to use when using the API (-a true). Defaults to pom.xml", defaultValue = "pom.xml")
